@@ -1,0 +1,15 @@
+current directory: /Users/gcode/EH/simpleapp/vendor/bundle/ruby/2.6.0/gems/debug_inspector-1.1.0/ext/debug_inspector
+/Users/gcode/.rvm/rubies/ruby-2.6.6/bin/ruby -I /Users/gcode/.rvm/rubies/ruby-2.6.6/lib/ruby/site_ruby/2.6.0 -r ./siteconf20210405-29285-1p9fkoa.rb extconf.rb
+creating Makefile
+
+current directory: /Users/gcode/EH/simpleapp/vendor/bundle/ruby/2.6.0/gems/debug_inspector-1.1.0/ext/debug_inspector
+make "DESTDIR=" clean
+
+current directory: /Users/gcode/EH/simpleapp/vendor/bundle/ruby/2.6.0/gems/debug_inspector-1.1.0/ext/debug_inspector
+make "DESTDIR="
+compiling debug_inspector.c
+linking shared-object debug_inspector.bundle
+
+current directory: /Users/gcode/EH/simpleapp/vendor/bundle/ruby/2.6.0/gems/debug_inspector-1.1.0/ext/debug_inspector
+make "DESTDIR=" install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 debug_inspector.bundle ./.gem.20210405-29285-10e050y
