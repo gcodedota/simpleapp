@@ -1,8 +1,13 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <strong>Avatar:</strong>
+  <%= image_tag(@employee.avatar.url, alt: 'Image') if @employee.avatar %>
+</p>
+
+<p>
   <strong>Organisation:</strong>
-  <%= @employee.organisation %>
+  <%= @employee.organisation_id %>
 </p>
 
 <p>
@@ -18,11 +23,6 @@
 <p>
   <strong>Email:</strong>
   <%= @employee.email %>
-</p>
-
-<p>
-  <strong>Password:</strong>
-  <%= @employee.password %>
 </p>
 
 <p>

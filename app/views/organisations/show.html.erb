@@ -1,5 +1,9 @@
 <p id="notice"><%= notice %></p>
 
+<div class="field">
+  <%= image_tag(@organisation.logo.url, alt: 'Image') if @organisation.logo %>
+</div>
+
 <p>
   <strong>Name:</strong>
   <%= @organisation.name %>

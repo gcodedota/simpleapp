@@ -5,7 +5,7 @@ module SessionsHelper
 
   def current_user
     if session[:user_id]
-      @current_user ||= User.find_by(id: session[:user_id])
+      @current_user ||= Employee.find_by(id: session[:user_id])
     end
   end
 
@@ -20,6 +20,14 @@ module SessionsHelper
 
   def current_user?(user)
     user == current_user
+  end
+
+  def admin?
+    current_user.role == 'admin'
+  end
+
+  def system?
+    current_user.role == 'system'
   end
 
   def redirect_back_or(default)

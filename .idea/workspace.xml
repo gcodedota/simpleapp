@@ -4,11 +4,47 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27c11779-0bfd-4abb-a207-2a16970468b1" name="Default Changelist" comment="" />
+    <list default="true" id="27c11779-0bfd-4abb-a207-2a16970468b1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/uploaders/avatar_uploader.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20210406031206_add_avatar_to_employees.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20210406031247_add_logo_to_organisations.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/employee/avatar/10/pepe.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/organisation/logo/1/pepe.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/simpleapp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/simpleapp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/employees_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/employees_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/organisations_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/organisations_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/sessions_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/sessions_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/employee.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/employee.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/organisation.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/organisation.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/employees/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/employees/_form.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/employees/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/employees/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/employees/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/employees/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/organisations/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/organisations/_form.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/organisations/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/organisations/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/development.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/development.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.6.0/extensions/x86_64-darwin-19/2.6.0/bcrypt-3.1.16/bcrypt_ext.bundle" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/bundle/ruby/2.6.0/extensions/x86_64-darwin-19/2.6.0/bcrypt-3.1.16/bcrypt_ext.bundle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.6.0/extensions/x86_64-darwin-19/2.6.0/bcrypt-3.1.16/gem_make.out" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/bundle/ruby/2.6.0/extensions/x86_64-darwin-19/2.6.0/bcrypt-3.1.16/gem_make.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.6.0/gems/bcrypt-3.1.16/ext/mri/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/bundle/ruby/2.6.0/gems/bcrypt-3.1.16/ext/mri/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.6.0/gems/bcrypt-3.1.16/ext/mri/bcrypt_ext.bundle" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/bundle/ruby/2.6.0/gems/bcrypt-3.1.16/ext/mri/bcrypt_ext.bundle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.6.0/gems/bcrypt-3.1.16/lib/bcrypt_ext.bundle" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/bundle/ruby/2.6.0/gems/bcrypt-3.1.16/lib/bcrypt_ext.bundle" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Ruby File" />
+      </list>
+    </option>
   </component>
   <component name="GeneratorOptions">
     <option name="VCS_SHOW_CONFIRMATION" value="true" />
@@ -32,14 +68,19 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectId" id="1qjfoN3PFqoWF40dMdinqFPvLnM" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/app/views/sessions" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -347,7 +388,7 @@
       <option name="presentableId" value="Default" />
       <updated>1617598093624</updated>
       <workItem from="1617598094702" duration="15764000" />
-      <workItem from="1617617670350" duration="217000" />
+      <workItem from="1617617670350" duration="12843000" />
     </task>
     <servers />
   </component>
@@ -364,6 +405,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/simpleapp@Organisation.rcov" NAME="Organisation Coverage Results" MODIFIED="1617609322307" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="simpleapp" />
