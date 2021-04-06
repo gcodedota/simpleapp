@@ -3,35 +3,20 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
   include SessionsHelper
-  def logged_in_user
 
-    logger.info "==============user #{logged_in?}"
-    return unless logged_in?
-
-    store_location
-    flash[:danger] = 'Please log in.'
-    redirect_to login_url
-  end
-
-  def admin_user_logged_in
-    logger.info "==============admin #{logged_in? && admin?}"
-    return unless logged_in? && admin?
-
-    store_location
-    flash[:danger] = 'Please log in as admin.'
-    redirect_to login_url
-  end
-
-  def system_user_logged_in
-    logger.info "==============system #{logged_in? && system?}"
-    return unless logged_in? && system?
-
-    store_location
-    flash[:danger] = 'Please log in as system.'
-    redirect_to login_url
+  before_filter do
+    resource = controller_name.singularize.to_sym
+    method = "#{resource}_params"
+    params[resource] &&= send(method) if respond_to?(method, true)
   end
 
   def current_user
-    super
+    if session[:user_id]
+      @current_user ||= Employee.find_by(id: session[:user_id])
+    end
+  end
+
+  rescue_from CanCan::AccessDenied do |exception|
+    redirect_to '/', alert: exception.message
   end
 end

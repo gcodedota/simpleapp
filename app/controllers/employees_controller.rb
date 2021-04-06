@@ -1,9 +1,6 @@
 class EmployeesController < ApplicationController
   before_action :set_employee, only: [:show, :edit, :update, :destroy]
-  # before_action :logged_in_user, only: %i[index update]
-  # before_action :admin_user_logged_in, only: %i[index update]
-  # before_action :system_user_logged_in, only: %i[index update]
-
+  load_and_authorize_resource
   # GET /employees
   # GET /employees.json
   def index

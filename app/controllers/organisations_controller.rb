@@ -1,6 +1,6 @@
 class OrganisationsController < ApplicationController
   before_action :set_organisation, only: [:show, :edit, :update, :destroy]
-
+  load_and_authorize_resource
   # GET /organisations
   # GET /organisations.json
   def index
@@ -69,6 +69,6 @@ class OrganisationsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def organisation_params
-      params.require(:organisation).permit(:name, :logo)
+      params.require(:organisation).permit(:name, :logo, :authenticity_token)
     end
 end
