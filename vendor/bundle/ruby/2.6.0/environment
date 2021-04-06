@@ -1,3 +1,0 @@
-export PATH="/Users/gcode/.rvm/gems/ruby-2.6.6/bin:/Users/gcode/.rvm/gems/ruby-2.6.6@global/bin:$PATH"
-export GEM_PATH="/Users/gcode/EH/simpleapp/vendor/bundle/ruby/2.6.0"
-export GEM_HOME="/Users/gcode/EH/simpleapp/vendor/bundle/ruby/2.6.0"
