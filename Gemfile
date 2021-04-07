@@ -5,6 +5,7 @@ gem 'bcrypt', '~> 3.1.16'
 gem 'cancan'
 gem 'carrierwave'
 gem 'coffee-rails', '~> 4.1.0'
+gem 'haml-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'jquery-rails'
 gem 'pg', '~> 0.15'
@@ -26,6 +27,7 @@ group :development do
 end
 
 group :test do
-  gem 'database_cleaner', '1.7.0'
+  gem 'cucumber-rails', require: false
+  gem 'database_cleaner'
 end
 

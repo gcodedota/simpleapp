@@ -1,0 +1,28 @@
+%p#notice= notice
+%p
+  %strong Avatar:
+  = image_tag(@employee.avatar.url, alt: 'Image') if @employee.avatar
+%p
+  %strong Organisation:
+  = @employee.organisation_id
+%p
+  %strong First Name:
+  = @employee.fname
+%p
+  %strong Last Name:
+  = @employee.lname
+%p
+  %strong Email:
+  = @employee.email
+%p
+  %strong Birthday:
+  = @employee.birthday
+%p
+  %strong Role:
+  = @employee.role
+%p
+  %strong Status:
+  = @employee.status
+= link_to 'Edit', edit_employee_path(@employee)
+|
+= link_to 'Back', employees_path

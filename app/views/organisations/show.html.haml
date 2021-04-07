@@ -1,0 +1,9 @@
+%p#notice= notice
+.field
+  = image_tag(@organisation.logo.url, alt: 'Image') if @organisation.logo
+%p
+  %strong Name:
+  = @organisation.name
+= link_to 'Edit', edit_organisation_path(@organisation)
+|
+= link_to 'Back', organisations_path
