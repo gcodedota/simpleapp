@@ -1,0 +1,28 @@
+%p#notice= notice
+%h1 Listing Employees
+%table
+  %thead
+    %tr
+      %th Organisation
+      %th Fname
+      %th Lname
+      %th Email
+      %th Birthday
+      %th Role
+      %th Status
+      %th{:colspan => "3"}
+  %tbody
+    - @employees.each do |employee|
+      %tr
+        %td= link_to employee.organisation_id, organisation_path(:id => employee.organisation_id)
+        %td= employee.fname
+        %td= employee.lname
+        %td= employee.email
+        %td= employee.birthday
+        %td= employee.role
+        %td= employee.status
+        %td= link_to 'Show', employee
+        %td= link_to 'Edit', edit_employee_path(employee)
+        %td= link_to 'Destroy', employee, method: :delete, data: { confirm: 'Are you sure?' }
+%br/
+= link_to 'New Employee', new_employee_path
