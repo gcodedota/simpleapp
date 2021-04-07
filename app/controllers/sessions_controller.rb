@@ -13,7 +13,7 @@ class SessionsController < ApplicationController
 
   def activate
     user = Employee.find(params[:id])
-    if (Time.at(params[:sent_time].to_i) - Time.now) < 15.minutes && !user.nil?
+    if (Time.now - Time.at(params[:sent_time].to_i)) < 15.minutes && !user.nil?
       user.status = 'activated'
       user.save!
       redirect_to user
